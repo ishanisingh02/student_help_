@@ -1,0 +1,141 @@
+.gpa-calculator-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .gpa-form {
+    margin-bottom: 20px;
+  }
+  
+  .subject-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .subject-row input {
+    width: 45%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subject-row button {
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subject-row button:hover {
+    background-color: #c82333;
+  }
+  
+  .add-subject-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-subject-button:hover {
+    background-color: #218838;
+  }
+  
+  .calculate-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #28a745;
+  }
+  
+  /* Dark Mode Styles */
+  .gpa-calculator-container.dark-mode {
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  
+  .gpa-calculator-container.dark-mode h1 {
+    color: #1a73e8;
+  }
+  
+  .gpa-calculator-container.dark-mode input {
+    background-color: #6c757d;
+    color: #f8f9fa;
+    border-color: #adb5bd;
+  }
+  
+  .gpa-calculator-container.dark-mode button {
+    background-color: #007bff;
+  }
+  
+  .gpa-calculator-container.dark-mode .calculate-button {
+    background-color: #1a73e8;
+  }
+  
+  .gpa-calculator-container.dark-mode .subject-row button {
+    background-color: #c82333;
+  }
+  
+  .gpa-calculator-container.dark-mode .add-subject-button {
+    background-color: #218838;
+  }
+  
+  .toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .toggle-dark-mode:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  

@@ -1,0 +1,192 @@
+.calendar-container {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items at the top */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .calendar-header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the elements */
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    position: relative;
+  }
+  
+  .calendar-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #007bff;
+    text-align: center;
+    flex-grow: 1; /* Allow the title to take up space */
+  }
+  
+  .calendar-header button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dark-mode-toggle {
+    position: absolute;
+    right: 40px; /* Position to the right */
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #1366d6;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .calendar-day {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    height: 120px;  /* Set a fixed height */
+    overflow-y: auto;  /* Ensure content doesn't overflow */
+  }
+  
+  .calendar-day:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+  }
+  
+  .day-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .has-tasks {
+    background-color: #ffedcc;
+    border-color: #ffc107;
+  }
+  
+  .tasks-list {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    max-height: 70px;  /* Limit the height of the task list */
+    overflow-y: auto;  /* Enable scrolling if tasks exceed the box size */
+  }
+  
+  .tasks-list li {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .task-input-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-input-container h3 {
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  
+  .task-input-container input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .task-input-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-input-container button:hover {
+    background-color: #218838;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  
+  .dark-mode .calendar-header h2 {
+    color: #f8f9fa;
+  }
+  
+  .dark-mode .calendar-header button {
+    background-color: #1a73e8;
+  }
+  
+  .dark-mode .calendar-header button:hover {
+    background-color: #1366d6;
+  }
+  
+  .dark-mode .calendar-day {
+    background-color: #343a40;
+    border-color: #6c757d;
+  }
+  
+  .dark-mode .calendar-day:hover {
+    background-color: #495057;
+  }
+  
+  .dark-mode .has-tasks {
+    background-color: #ffc107;
+    border-color: #e0a800;
+  }
+  
+  .dark-mode .task-input-container {
+    background-color: #343a40;
+  }
+  
+  .dark-mode .task-input-container h3 {
+    color: #f8f9fa;
+  }
+  
+  .dark-mode .task-input-container input {
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  

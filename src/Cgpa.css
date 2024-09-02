@@ -1,0 +1,169 @@
+/* Default light theme */
+:root {
+    --bg-color: #f0f0f0;
+    --container-bg-color: #ffffff;
+    --text-color: #34495e;
+    --input-bg-color: #ecf0f1;
+    --input-border-color: #bdc3c7;
+    --button-bg-color: #2ecc71;
+    --button-hover-bg-color: #27ae60;
+    --remove-btn-bg-color: #e74c3c;
+    --remove-btn-hover-bg-color: #c0392b;
+    --cgpa-color: #2980b9;
+    --font-family: 'Arial', sans-serif;
+  }
+  
+  /* Dark theme */
+  [data-theme='dark'] {
+    --bg-color: #2c3e50;
+    --container-bg-color: #34495e;
+    --text-color: #ecf0f1;
+    --input-bg-color: #34495e;
+    --input-border-color: #7f8c8d;
+    --button-bg-color: #27ae60;
+    --button-hover-bg-color: #2ecc71;
+    --remove-btn-bg-color: #c0392b;
+    --remove-btn-hover-bg-color: #e74c3c;
+    --cgpa-color: #3498db;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .cgpa-calculator-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: var(--container-bg-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .cgpa-calculator-container h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .cgpa-calculator-container p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+  }
+  
+  .cgpa-calculator-container .semester-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--input-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .cgpa-calculator-container .semester-input:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cgpa-calculator-container .semester-input input {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .cgpa-calculator-container .semester-input button {
+    background-color: var(--remove-btn-bg-color);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cgpa-calculator-container .semester-input button:hover {
+    background-color: var(--remove-btn-hover-bg-color);
+  }
+  
+  .cgpa-calculator-container .add-btn,
+  .cgpa-calculator-container .calculate-btn {
+    padding: 15px 40px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cgpa-calculator-container .add-btn:hover,
+  .cgpa-calculator-container .calculate-btn:hover {
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  .cgpa-calculator-container h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: var(--cgpa-color);
+    font-weight: 700;
+  }
+  
+  @media (max-width: 600px) {
+    .cgpa-calculator-container .semester-input {
+      flex-direction: column;
+    }
+  
+    .cgpa-calculator-container .semester-input input {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .cgpa-calculator-container .semester-input button {
+      width: 100%;
+    }
+  }
+  
+  .cgpa-calculator-container .theme-btn {
+    padding: 10px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cgpa-calculator-container .theme-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: var(--remove-btn-bg-color);
+  }
+  

@@ -1,0 +1,137 @@
+/* General Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.app {
+    min-height: 100vh;
+    position: relative;
+    background-color: inherit; /* Ensure background color is inherited from body */
+    color: inherit; /* Ensure text color is inherited from body */
+}
+
+.mode-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.mode-switch:hover {
+    background-color: #0056b3;
+}
+
+.todo-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Default background color for light mode */
+    color: #000; /* Default text color for light mode */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .todo-container {
+    background-color: #2c2c2c; /* Background color for dark mode */
+    color: #ffffff; /* Text color for dark mode */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type='text'] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+.remove-all-button {
+    margin-top: 20px;
+    align-self: flex-end;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.remove-all-button:hover {
+    background-color: #c82333;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between; /* Align items to the edges */
+    align-items: center;
+    margin: 10px 0;
+}
+
+.task-list li span {
+    flex: 1; /* Allow text to take available space */
+}
+
+.edit-button {
+    background-color: #28a745; /* Green color for edit buttons */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888; /* Optional: Change color for completed tasks */
+}
+
+.congrats-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745; /* Green color for the congratulatory message */
+}
+
